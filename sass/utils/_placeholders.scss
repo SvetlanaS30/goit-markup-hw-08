@@ -1,0 +1,29 @@
+%footer__text {
+  font-size: 14px;
+  line-height: 1.14;
+  color: $primery-white-color;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+%button {
+  min-width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  border-radius: 4px;
+  border: transparent;
+  color: $primery-white-color;
+  background-color: $accent-color;
+
+  cursor: pointer;
+
+  letter-spacing: 0.06em;
+  transition: background-color 250ms $transition-function, color 250ms $transition-function;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    color: $primery-white-color;
+  }
+}

@@ -1,0 +1,17 @@
+.logo {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 1.17;
+  color: $accent-color;
+
+  font-family: $secondary-font;
+  text-decoration: none;
+  &__black {
+    color: #000000;
+  }
+  &__light {
+    color: $primery-white-color;
+  }
+  // font-size: 26px;
+  // line-height: 1.19;
+}

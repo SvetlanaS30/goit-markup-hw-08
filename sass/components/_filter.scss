@@ -2,22 +2,23 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  // justify-content: center;
+  @media screen and(min-width:768px) {
+    justify-content: center;
+  }
 }
 .filter__item {
   margin-right: 8px;
-
-  margin-bottom: 15px;
-  &:nth-last-child(-n + 2) {
-    margin-bottom: 0;
+  @media screen and(max-width:767px) {
+    margin-bottom: 15px;
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
   }
-  // margin-left: 8px;
-  // &:not(:first-child) {
-  //   margin-left: 0;
-  // }
-  // &:not(:last-child) {
-  //   margin-bottom: 15px;
-  // }
+  @media screen and(min-width:768px) {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 .filter__button {
   padding: 6px 22px;
@@ -45,5 +46,10 @@
 }
 .filter__section {
   margin-bottom: 40px;
-  // margin-bottom: 50px;
+  @media screen and(min-width:768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-bottom: 50px;
+  }
 }

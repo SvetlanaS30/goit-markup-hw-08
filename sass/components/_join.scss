@@ -1,13 +1,10 @@
-// .join__text {
-//   font-size: 14px;
-//   line-height: 1.14;
-//   color: $primery-white-color;
-//   text-transform: uppercase;
-
-//   margin-bottom: 20px;
-// }
 .join {
-  margin-top: 60px;
+  @media screen and(max-width:767px) {
+    margin-top: 60px;
+  }
+  // @media screen and(min-width:1200px) {
+  //   flex-grow: 1;
+  // }
 }
 .join__text {
   @extend %footer__text;

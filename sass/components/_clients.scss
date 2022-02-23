@@ -8,13 +8,12 @@
   margin: 15px;
 
   color: #afb1b8;
-
-  // width: calc((100% - 150px) / 6);
-
-  // margin-left: 30px;
-  // &:first-child {
-  //   margin-left: 0;
-  // }
+  @media screen and(min-width:768px) {
+    width: calc((100% - 90px) / 3);
+  }
+  @media screen and(min-width:1200px) {
+    width: calc((100% - 180px) / 6);
+  }
 }
 .clients__link {
   display: flex;

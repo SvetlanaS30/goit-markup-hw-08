@@ -9,4 +9,7 @@
   opacity: 1;
   transition: opacity 250ms $transition-function, visibility 250ms $transition-function;
   z-index: 1;
+  @media screen and(max-width:767px) {
+    overflow-y: scroll;
+  }
 }

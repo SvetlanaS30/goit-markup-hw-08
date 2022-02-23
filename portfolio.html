@@ -22,13 +22,19 @@
             <span class="logo__black">Studio</span>
           </a>
           <div class="menu">
-            <button type="button" class="menu__button is-open" data-menu-button aria-expanded="false">
+            <button
+              type="button"
+              class="menu__button is-open"
+              data-menu-button
+              aria-expanded="false"
+              aria-controls="menu-container"
+            >
               <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                <use class="menu__icon-close is-open" href="./images/iconsmenu.svg#icon-close-menu"></use>
-                <use class="menu__icon" href="./images/iconsmenu.svg#icon-menu"></use>
+                <use class="menu__icon-close is-open" href="./images/icons.svg#icon-close-menu"></use>
+                <use class="menu__icon" href="./images/icons.svg#icon-menu"></use>
               </svg>
             </button>
-            <div class="menu__container" data-menu>
+            <div class="menu__container is-open" id="menu-container" data-menu>
               <ul>
                 <li class="menu__item"><a class="menu__link" href="./index.html">Студия</a></li>
                 <li class="menu__item">
@@ -111,7 +117,19 @@
             <li class="gallery__item">
               <a href="" class="card">
                 <div class="card__wrap">
-                  <img src="./images/img-portfolio-1.jpg" alt="Открытый макбук" width="450" />
+                  <picture>
+                    <source
+                      srcset="./images/tehno_desk.jpg 1x, ./images/tehno_desk_2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source srcset="./images/team4_tab.jpg 1x, ./images/tehno_tab_2.jpg 2x" media="(min-width:768px)" />
+                    <source
+                      srcset="./images/tehno_mob.jpg 1x, ./images/tehno_mob_2x.jpg 2x"
+                      media="(min-width:480px)"
+                    />
+                    <img src="./images/tehno_desk.jpg" alt="Открытый макбук" />
+                  </picture>
+                  <!-- <img src="./images/img-portfolio-1.jpg" alt="Открытый макбук" width="450" /> -->
 
                   <div class="card__overlay">
                     <p class="card__overlay-text">
@@ -274,63 +292,65 @@
     <!-- Подвал -->
     <footer class="footer-page">
       <div class="container footer-page__container">
-        <div class="footer-page__address">
-          <a href="./index.html" class="logo footer-page__logo">
-            Web
-            <span class="logo__light">Studio</span>
-          </a>
-          <address>
-            <ul class="address">
-              <li class="address__item">
-                <a
-                  href="https://goo.gl/maps/nAwjV8WESkUA59sd9"
-                  target="_blank"
-                  class="address__link address__link--color"
-                >
-                  г. Киев, пр-т Леси Украинки, 26
+        <div class="footer-page__address-join">
+          <div class="footer-page__address">
+            <a href="./index.html" class="logo footer-page__logo">
+              Web
+              <span class="logo__light">Studio</span>
+            </a>
+            <address>
+              <ul class="address">
+                <li class="address__item">
+                  <a
+                    href="https://goo.gl/maps/nAwjV8WESkUA59sd9"
+                    target="_blank"
+                    class="address__link address__link--color"
+                  >
+                    г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="address__item">
+                  <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a>
+                </li>
+                <li class="address__item">
+                  <a href="tel:+380961111111" class="address__link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join">
+            <p class="join__text">присоединяйтесь</p>
+            <ul class="social-group">
+              <li class="social-group__item">
+                <a href="" class="social-group__link social-group__link--bg-color">
+                  <svg class="social-group__icon">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="address__item">
-                <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a>
+              <li class="social-group__item">
+                <a href="" class="social-group__link social-group__link--bg-color">
+                  <svg class="social-group__icon">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a href="tel:+380961111111" class="address__link">+38 096 111 11 11</a>
+              <li class="social-group__item">
+                <a href="" class="social-group__link social-group__link--bg-color">
+                  <svg class="social-group__icon">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-group__item">
+                <a href="" class="social-group__link social-group__link--bg-color">
+                  <svg class="social-group__icon">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="join">
-          <p class="join__text">присоединяйтесь</p>
-          <ul class="social-group">
-            <li class="social-group__item">
-              <a href="" class="social-group__link social-group__link--bg-color">
-                <svg class="social-group__icon">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-group__item">
-              <a href="" class="social-group__link social-group__link--bg-color">
-                <svg class="social-group__icon">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-group__item">
-              <a href="" class="social-group__link social-group__link--bg-color">
-                <svg class="social-group__icon">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-group__item">
-              <a href="" class="social-group__link social-group__link--bg-color">
-                <svg class="social-group__icon">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="subscribe footer-page__subscribe">
           <p class="subscribe__text">Подпишитесь на рассылку</p>
@@ -350,6 +370,7 @@
         </div>
       </div>
     </footer>
+
     <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -12,6 +12,8 @@
   &__light {
     color: $primery-white-color;
   }
-  // font-size: 26px;
-  // line-height: 1.19;
+  @media screen and(min-width:1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }

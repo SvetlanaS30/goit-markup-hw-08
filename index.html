@@ -156,7 +156,14 @@
           <ul class="works">
             <li class="works__item">
               <div class="works__wrap">
-                <img src="./images/img1.jpg" alt="Человек работающий над программой" width="370" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/works1_desk.jpg 1x, ./images/works1_desk_2x.jpg 2x"
+                  />
+                  <img src="./images/works1_desk.jpg" alt="Человек работающий над программой" />
+                </picture>
+                <!-- <img src="./images/img1.jpg" alt="Человек работающий над программой" width="370" /> -->
                 <div class="works__field">
                   <p class="works__text">Десктопные приложения</p>
                 </div>
@@ -164,7 +171,14 @@
             </li>
             <li class="works__item">
               <div class="works__wrap">
-                <img src="./images/img2.jpg" alt="Процесс разработки мобильных приложений" width="370" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/works2_desk.jpg 1x, ./images/works2_desk_2x.jpg 2x"
+                  />
+                  <img src="./images/works2_desk.jpg" alt="Процесс разработки мобильных приложений" />
+                </picture>
+                <!-- <img src="./images/img2.jpg" alt="Процесс разработки мобильных приложений" width="370" /> -->
                 <div class="works__field">
                   <p class="works__text">Мобильные приложения</p>
                 </div>
@@ -172,7 +186,14 @@
             </li>
             <li class="works__item">
               <div class="works__wrap">
-                <img src="./images/img3.jpg" alt="Шестиугольник с градиентом цвета на планшете" width="370" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/works3_desk.jpg 1x, ./images/works3_desk_2x.jpg 2x"
+                  />
+                  <img src="./images/works3_desk.jpg" alt="Шестиугольник с градиентом цвета на планшете" />
+                </picture>
+                <!-- <img src="./images/img3.jpg" alt="Шестиугольник с градиентом цвета на планшете" width="370" /> -->
                 <div class="works__field">
                   <p class="works__text">Дизайнерские решения</p>
                 </div>
@@ -187,7 +208,16 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img class="team__img" src="./images/photo1.jpg" alt="Игорь Демьяненко" width="450" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team1_desk.jpg 1x, ./images/team1_desk_2x.jpg 2x"
+                />
+                <source media="(min-width: 768px)" srcset="./images/team1_tab.jpg 1x, ./images/team1_tab_2x.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="./images/team1_mob.jpg 1x, ./images/team1_mob_2x.jpg 2x" />
+                <img src="./images/team1_desk.jpg" alt="Игорь Демьяненко" />
+              </picture>
+              <!-- <img class="team__img" src="./images/photo1.jpg" alt="Игорь Демьяненко" width="450" /> -->
               <div class="team__content">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -224,7 +254,16 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__img" src="./images/photo2.jpg" alt="Ольга Репина" width="450" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team2_desk.jpg 1x, ./images/team2_desk_2x.jpg 2x"
+                />
+                <source media="(min-width: 768px)" srcset="./images/team2_tab.jpg 1x, ./images/team2_tab_2x.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="./images/team2_mob.jpg 1x, ./images/team2_mob_2x.jpg 2x" />
+                <img src="./images/team2_desk.jpg" alt="Ольга Репина" />
+              </picture>
+              <!-- <img class="team__img" src="./images/photo2.jpg" alt="Ольга Репина" width="450" /> -->
               <div class="team__content">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -261,7 +300,16 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__img" src="./images/photo3.jpg" alt="Николай Тарасов" width="450" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team3_desk.jpg 1x, ./images/team3_desk_2x.jpg 2x"
+                />
+                <source media="(min-width: 768px)" srcset="./images/team3_tab.jpg 1x, ./images/team3_tab_2x.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="./images/team3_mob.jpg 1x, ./images/team3_mob_2x.jpg 2x" />
+                <img src="./images/team3_desk.jpg" alt="Николай Тарасов" />
+              </picture>
+              <!-- <img class="team__img" src="./images/photo3.jpg" alt="Николай Тарасов" width="450" /> -->
               <div class="team__content">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -298,7 +346,16 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__img" src="./images/photo4.jpg" alt="Михаил Ермаков" width="450" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team4_desk.jpg 1x, ./images/team4_desk_2x.jpg 2x"
+                />
+                <source media="(min-width: 768px)" srcset="./images/team4_tab.jpg 1x, ./images/team4_tab_2x.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="./images/team4_mob.jpg 1x, ./images/team4_mob_2x.jpg 2x" />
+                <img src="./images/team4_desk.jpg" alt="Михаил Ермаков" />
+              </picture>
+              <!-- <img class="team__img" src="./images/photo4.jpg" alt="Михаил Ермаков" width="450" /> -->
               <div class="team__content">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__text">UI Designer</p>

@@ -38,6 +38,11 @@
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
+.card__content--padding {
+  @media screen and(min-width: 768px) and(max-width:1199px) {
+    padding-bottom: 56px;
+  }
+}
 .card__title {
   margin-bottom: 4px;
 

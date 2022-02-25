@@ -22,40 +22,44 @@
             <span class="logo__black">Studio</span>
           </a>
           <div class="menu">
-            <button
-              type="button"
-              class="menu__button"
-              data-menu-button
-              aria-expanded="false"
-              aria-controls="menu-container"
-            >
-              <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                <use class="menu__icon-close" href="./images/icons.svg#icon-close-menu"></use>
+            <button type="button" class="menu__open-btn">
+              <svg width="40" height="40">
                 <use class="menu__icon" href="./images/icons.svg#icon-menu"></use>
               </svg>
             </button>
-            <div class="menu__container" id="menu-container" data-menu>
-              <ul>
-                <li class="menu__item"><a class="menu__link" href="./index.html">Студия</a></li>
-                <li class="menu__item">
-                  <a class="menu__link menu__link--curent" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
-              </ul>
-              <ul class="menu__contacts contacts-menu">
-                <li class="contacts-menu__item">
-                  <a href="tel:+380961111111" class="contacts-menu__tel">+38 096 111 11 11</a>
-                </li>
-                <li class="contacts-menu__item">
-                  <a href="mailto:info@devstudio.com" class="contacts-menu__mail">info@devstudio.com</a>
-                </li>
-              </ul>
-              <ul class="menu__social social-menu">
-                <li class="social-menu__item"><a class="social-menu__link">Instagram</a></li>
-                <li class="social-menu__item"><a class="social-menu__link">Twitter</a></li>
-                <li class="social-menu__item"><a class="social-menu__link">Facebook</a></li>
-                <li class="social-menu__item"><a class="social-menu__link">LinkedIn</a></li>
-              </ul>
+            <div class="menu__container">
+              <div class="cont">
+                <div class="menu__top">
+                  <button type="button" class="menu__close-btn">
+                    <svg width="40" height="40">
+                      <use class="menu__icon-close" href="./images/icons.svg#icon-close-menu"></use>
+                    </svg>
+                  </button>
+                  <ul>
+                    <li class="menu__item"><a class="menu__link" href="./index.html">Студия</a></li>
+                    <li class="menu__item">
+                      <a class="menu__link menu__link--curent" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
+                  </ul>
+                </div>
+                <div class="menu__bottom">
+                  <ul class="menu__contacts contacts-menu">
+                    <li class="contacts-menu__item">
+                      <a href="tel:+380961111111" class="contacts-menu__tel">+38 096 111 11 11</a>
+                    </li>
+                    <li class="contacts-menu__item">
+                      <a href="mailto:info@devstudio.com" class="contacts-menu__mail">info@devstudio.com</a>
+                    </li>
+                  </ul>
+                  <ul class="menu__social social-menu">
+                    <li class="social-menu__item"><a class="social-menu__link">Instagram</a></li>
+                    <li class="social-menu__item"><a class="social-menu__link">Twitter</a></li>
+                    <li class="social-menu__item"><a class="social-menu__link">Facebook</a></li>
+                    <li class="social-menu__item"><a class="social-menu__link">LinkedIn</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           <ul class="site-nav">

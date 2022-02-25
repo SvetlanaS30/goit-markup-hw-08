@@ -26,12 +26,34 @@
   }
 }
 .card__overlay-text {
-  position: absolute;
-  font-size: 18px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 20px 20px;
+  font-size: 14px;
   line-height: 1.56;
   color: $primery-white-color;
-  padding: 63px 24px;
+  @media screen and(min-width: 350px) {
+    padding: 30px 20px;
+    font-size: 16px;
+    line-height: 1.56;
+    // color: $primery-white-color;
+  }
+  @media screen and(min-width:387px) {
+    padding: 50px 24px;
+    font-size: 16px;
+    line-height: 1.56;
+    // color: $primery-white-color;
+  }
+  @media screen and (min-width: 425px) {
+    position: absolute;
+    font-size: 18px;
+    line-height: 1.56;
+    // color: $primery-white-color;
+    padding: 63px 24px;
+  }
 }
+
 .card__content {
   padding: 20px 24px;
   background-color: $primery-white-color;

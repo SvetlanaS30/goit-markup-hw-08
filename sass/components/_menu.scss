@@ -3,56 +3,56 @@
     display: none;
   }
 }
-.menu__button {
-  display: inline-flex;
-  margin: 0;
+.menu__open-btn,
+.menu__close-btn {
+  display: block;
   padding: 0;
+  margin-left: auto;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
+.menu__container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: $primery-white-color;
+  padding-top: 10px;
+  padding-bottom: 48px;
+
+  z-index: 1;
+  .cont {
+    padding-right: 15px;
+    padding-left: 40px;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 .menu__icon-close {
   fill: $title-text-color;
-  .menu__button & {
-    display: none;
-  }
-  .menu__button.is-open & {
-    display: block;
-  }
   transition: fill 250ms $transition-function;
 
-  .menu__button:hover &,
-  .menu__button:focus & {
+  .menu__close-btn:hover &,
+  .menu__close-btn:focus & {
     fill: $accent-color;
   }
 }
 .menu__icon {
   fill: $title-text-color;
-  .menu__button.is-open & {
-    display: none;
-  }
   transition: fill 250ms $transition-function;
-  .menu__button:hover &,
-  .menu__button:focus & {
+  .menu__open-btn:hover &,
+  .menu__open-btn:focus & {
     fill: $accent-color;
   }
 }
-.menu__container {
-  z-index: 2;
-  display: none;
-  position: absolute;
-  width: 100%;
-  // height: 100%;
-  top: 100%;
-  left: 0;
-  background-color: $primery-white-color;
-  padding: 48px 40px;
-  &.is-open {
-    display: block;
-  }
-}
 
-.menu__item {
+.menu__item,
+.contacts-menu__item {
   &:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -77,20 +77,15 @@
   }
 }
 .contacts-menu {
-  margin-top: 302px;
   margin-bottom: 64px;
-}
-.contacts-menu__item {
-  &:not(:last-child) {
-    margin-bottom: 32px;
-  }
 }
 .contacts-menu__tel {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  color: $primery-text-color;
+  // color: $primery-text-color;
+  color: $accent-color;
   transition: color 250ms var(--transition-function);
 
   text-decoration: none;
@@ -130,7 +125,8 @@
   line-height: 1.22;
 
   letter-spacing: 0.02em;
-  color: $primery-text-color;
+  // color: $primery-text-color;
+  color: $accent-color;
   transition: color 250ms var(--transition-function);
   &:hover,
   &:focus {
